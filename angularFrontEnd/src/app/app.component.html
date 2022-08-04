@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+    <ul class="navbar-nav">
+
+        <li class="nav-item">
+            <a [routerLink]="['/employees']" routerLinkActive="active" class="nav-link">Lista Objetos</a>
+        </li>
+
+        <li class="nav-item">
+            <a [routerLink]="['/create-employee']" routerLinkActive="active" class="nav-link">Crear Objeto</a>
+        </li>
+
+    </ul>
+</nav>
+
+<h1 class="text-center">Interpolation: {{ title }}</h1>
+<div class="container">
+    <div>
+        <router-outlet></router-outlet>
+    </div>
+</div>
+
+<!-- <footer class="footer bg-secondary">
+    <div class="container bg-secondary">
+        <span>Este es el pie de pagina</span>
+    </div>
+    
+</footer> -->
